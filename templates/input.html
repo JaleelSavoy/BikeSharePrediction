@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-US">
+    <body>
+        <h1>Predict Daily % Change in Capital Bikeshare Rentals</h1>
+        <h3>Input Model Predictors</h3>
+        <div>
+        <form action="/output" method="POST">
+            <label for="season">Season</label>
+            <select id="season" name="season">
+                <option value=1>Winter</option>
+                <option value=2>Spring</option>
+                <option value=3>Summer</option>
+                <option value=4>Fall</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="mnth">Month (1-12)</label>
+            <select id="mnth" name="mnth">
+                <option value=1>Jan</option>
+                <option value=2>Feb</option>
+                <option value=3>Mar</option>
+                <option value=4>Apr</option>
+                <option value=5>May</option>
+                <option value=6>June</option>
+                <option value=7>July</option>
+                <option value=8>Aug</option>
+                <option value=9>Sept</option>
+                <option value=10>Oct</option>
+                <option value=11>Nov</option>
+                <option value=12>Dec</option>
+            </select>            
+            <br>
+            <br>
+            <br>
+            <label for="holiday">Holiday</label>
+            <select id="holiday" name="holiday">
+            <option value=0>No</option>
+            <option value=1>Yes</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="weekday">Weekday</label>
+            <select id="weekday" name="weekday">
+                <option value=0>Sunday</option>
+                <option value=1>Monday</option>
+                <option value=2>Tuesday</option>
+                <option value=3>Wednesday</option>
+                <option value=4>Thursday</option>
+                <option value=5>Friday</option>
+                <option value=6>Saturday</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="workingday">General Working Day</label>
+            <select id="workingday" name="workingday">
+            <option value=0>No</option>
+            <option value=1>Yes</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="weathersit">Today's Weather Situation</label>
+            <select id="weathersit" name="weathersit">
+                <option value=1>Clear to Some Clouds and Mist</option>
+                <option value=2>Cloudy and Misty</option>
+                <option value=3>Perciptation</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="windspeed">Average Windspeed for Today (mph)</label>
+            <input type="float" id="windspeed" name="windspeed", value=16.65>
+            <br>
+            <br>
+            <br>
+            <label for="temp">Average Temp Today (in Celsius)</label>
+            <input type="float" id="temp" name="temp", value=25.39>
+            <br>
+            <br>
+            <br>
+            <label for="weathersit_yest">Yesterday's Weather Situation</label>
+            <select id="weathersit_yest" name="weathersit_yest">
+                <option value=1>Clear to Some Clouds and Mist</option>
+                <option value=2>Cloudy and Misty</option>
+                <option value=3>Perciptation</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="holiday_yest">Yesterday Holiday</label>
+            <select id="holiday_yest" name="holiday_yest">
+                <option value=0>No</option>
+                <option value=1>Yes</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="windspeed_yest">Average Windspeed for Yesterday (mph)</label>
+            <input type="float" id="windspeed_yest" name="windspeed_yest", value=10.72>
+            <br>
+            <br>
+            <br>
+            <label for="temp_yest">Average Temp Yesterday (in Celsius)</label>
+            <input type="float" id="temp_yest" name="temp_yest", value=23.98>
+            <br>
+            <br>
+            <br>
+            <label for="cnt_yest">Total Rentals Yesterday</label>
+            <input type="float" id="cnt_yest" name="cnt_yest", value=985>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+
+        </form>
+        </div>
+    </body>
+</html>
